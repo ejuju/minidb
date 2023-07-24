@@ -13,7 +13,7 @@ import (
 
 func main() {
 	fpath := filepath.Join(os.TempDir(), "minidb")
-	if len(os.Args) > 2 {
+	if len(os.Args) == 2 {
 		fpath = os.Args[1]
 	}
 	startOpenFile := time.Now()
